@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style5.css">
+    <link rel="stylesheet" href="css/langue.css">
+    <link href="https://fonts.googleapis.com/css?family=Akronim|Modak|Montserrat|Parisienne&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test langue</title>
+</head>
+<body>
+    <header>
+    <nav class="title">
+
+                           <div class="titleBar "  >                
+                                           <h1>Le Petit Commerce
+                                           </h1>
+                           </div>
+               </nav>
+
+               <nav class="menuMobile">
+                    <img src="img/hamburge.png" alt="menuhamburger" id="imageburger" onclick="ouvrirFermer()">
+                 
+                  
+        <div class="navPart1"> 
+                    <i class="fas fa-search" id="search" onclick="openSearch()"></i>
+                   <i class="fas fa-user" id="user" onclick="openConnect()"></i>
+                   <i class="fas fa-shopping-basket" id="basket"></i>
+                </div>
+            
+                
+                
+              </nav> 
+                                                                         <!--boite de dialogue-->
+                   <div class="container-fluid">
+                     
+                     
+                     <div class="row justify-content-around">
+                       
+                     
+                       
+                     
+                                                                       
+
+               <div id="connection">
+                 <div id="debutconnection" > <p>déconnecté.</p>
+                  <hr> 
+                </div>
+                 
+
+                <form action="" >
+
+                    <input type="email" name="mail" id="mail" required>
+                      <label for="mail"></label>email <br>
+                     <input type="password" name="mdp" id="mdp">
+                    <label for="mdp">mot de passe</label> <br>
+                  <input type="submit" value="connection">
+                  
+                  
+
+                   </form>
+                  </div> 
+                </div>
+              </div>
+
+                                                                           <!-- fin boite de dialogue-->     
+        <!--menu mobile slidetoogle-->
+        <ul class="onglet" id="navMobile">
+          
+          
+            <a  href="index.html" style="color:black;" ><li class="navMobileOnglet " id="produits" > <strong style="margin-left:5px;">ACCUEIL</strong> </li></a><hr>
+
+          <a  href="#me" style="color:black;" onclick="ouvrirFermerProduit()"><li class="navMobileOnglet " id="produits" > <strong style="margin-left:5px;">Nos produits</strong> </li></a><hr>
+          <ul id="catProduit">
+            
+            <li style="margin-left:15px;list-style-type:none; ">t-shirt</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">casquette</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">bonnet</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">veste</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">manteau</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">pull</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">jean</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">chaussure</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">robes</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">lunette</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">montre</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">ceinture</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">sac</li>
+            <hr>
+            
+            <a  href="#compp" style="color:black;"><li class="navMobileOnglet" id="comp1" onclick="message2()"><strong style="margin-left:5px;">Homme</strong></li> </a><hr>
+            <a  href="produits.html" style="color:black;"><li class="navMobileOnglet" id="proj1"><strong style="margin-left:5px;">Femme</strong></li></a>
+            <hr>
+          </ul>
+          <a  href="localisation.html" style="color:black;"><li class="navMobileOnglet" id="propos" onclick="opencloseApropos()"><strong style="margin-left:5px;">Á propos de la boutique</strong></li> </a><hr>
+
+<ul id="prop">
+          <li style="margin-left:15px;list-style-type:none; ">Qui sommes-nous?</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">Contact</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">Recrutement</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">Evénements</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">Presse</li>
+            <hr>
+            <li style="margin-left:15px;list-style-type:none; ">Actualités</li>
+            <hr>
+          </ul>
+
+          <a  href="localisation.html" style="color:black;"><li class="navMobileOnglet" id="PointDeVente" ><strong style="margin-left:5px;">Point de vente</strong></li> </a><hr>
+          <a  href="reservation.html" style="color:black;"><li class="navMobileOnglet" id="Reservation" ><strong style="margin-left:5px;">Réservation</strong></li> </a><hr>
+
+                </ul>
+
+<!--fin menu toggle-->    
+        <br>
+   
+                   
+                  
+    
+                  
+                   
+        <img  id="activeK"  class="eface efface0 " src="img/France_resultat.png "alt="drapeau">
+                     <img id="usaK"   class="eface efface1 " src="img/uk_resultat.png" alt="usa flag"  onclick="retourUsa()">
+                     <img id="germanK"   class="eface  efface2" src="img/geman_resultat.png" alt="germany flag" onclick="allerRetourGer()">
+                     <img id="spainol"   class="eface  efface3"  src="img/espagnol_resultat.png" alt="spain flag" onclick="toggleuSpa()"><i class="fas fa-caret-down"onclick="toggleLang()"></i> <span id="lgselecteur" ></span>
+                    
+            
+                   
+                  </nav>
+
+                  <div id="selecteurLangue">
+                    <img  id="active1"  class="eface efface0 " src="img/France_resultat.png " alt="drapeau" onclick="alleFra()">
+                  <div> <img id="usa1" src="img/uk_resultat.png" alt="usa flag" style="margin-left: 3px;" onclick="allerUsa()"></div>
+                  <div> <img id="german1" src="img/geman_resultat.png" alt="germany flag" style="margin-left: 1px;" onclick="allerGer()"></div>
+                  <div> <img id="spain1"  src="img/espagnol_resultat.png" alt="spain flag" style="margin-left: 3px;"onclick="toggleuSpa()"></div>
+
+
+                </div>
+
+
+                <script>
+                
+function toggleLang()
+{
+
+document.getElementById('selecteurLangue').style.display="block";
+
+}
+
+
+function allerUsa()
+{
+  document.getElementById('usaK').style.visibility="visible";
+  document.getElementById('lgselecteur').textContent="EN";
+  document.getElementById('germanK').style.visibility="hidden";
+  document.getElementById('spainol').style.visibility="hidden";
+  document.getElementById('activeK').style.visibility="hidden";
+  document.getElementById('usa1').style.visibility="hidden";
+  document.getElementById('active1').style.display="block";
+  document.getElementById('german1').style.visibility="visible";
+  document.getElementById('spain1').style.visibility="visible";
+  document.getElementById('selecteurLangue').style.display="none";
+}
+
+function retourUsa()
+{
+  document.getElementById('usa1').style.visibility="hidden";
+  document.getElementById('german1').style.visibility="visible";
+  document.getElementById('spain1').style.visibility="visible";
+  document.getElementById('active1').style.visibility="visible";
+}
+function alleFra()
+{
+  document.getElementById('lgselecteur').textContent="FR";
+  document.getElementById('usaK').style.visibility="hidden";
+  document.getElementById('germanK').style.visibility="hidden";
+  document.getElementById('spainol').style.visibility="hidden";
+  document.getElementById('activeK').style.visibility="visible";
+  document.getElementById('usa1').style.visibility="visible";
+  document.getElementById('spain1').style.visibility="visible";
+  document.getElementById('german1').style.visibility="visible";
+
+  document.getElementById('active1').style.display="none";
+  document.getElementById('selecteurLangue').style.display="none";
+
+
+}
+function allerGer()
+{
+  document.getElementById('lgselecteur').textContent="GER";
+  document.getElementById('germanK').style.visibility="visible";
+  document.getElementById('usaK').style.visibility="hidden";
+  document.getElementById('spainol').style.visibility="hidden";
+  document.getElementById('activeK').style.visibility="hidden";
+
+  document.getElementById('german1').style.visibility="hidden";
+  document.getElementById('usa1').style.visibility="visible";
+  document.getElementById('spain1').style.visibility="visible";
+  document.getElementById('active1').style.display="block";
+  document.getElementById('selecteurLangue').style.display="none";
+
+
+
+
+}
+
+ function toggleuSpa()
+ {
+  document.getElementById('lgselecteur').textContent="ESP";
+
+   document.getElementById('spainol').style.visibility="visible";
+   document.getElementById('german1').style.visibility="visible";
+  document.getElementById('usa1').style.visibility="visible";
+  document.getElementById('spain1').style.visibility="hidden";
+  document.getElementById('active1').style.display="block";
+  document.getElementById('activeK').style.visibility="hidden";
+  document.getElementById('usaK').style.visibility="hidden";
+  document.getElementById('germanK').style.visibility="hidden";
+  document.getElementById('selecteurLangue').style.display="none";
+
+
+ }
+
+
+
+
+
+
+
+
+                
+                
+                
+                </script>
+                
+                  
+                </body>
+
+                </html>
+
+                

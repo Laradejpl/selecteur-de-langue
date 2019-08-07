@@ -1,0 +1,60 @@
+#activeK
+{
+    position: absolute;
+    z-index: 1;
+    float: inherit;
+    
+   
+   
+    visibility: visible;
+}
+
+
+#usaK
+{
+    position: relative;
+    float:inherit;
+    
+ visibility: visible;
+  
+}
+
+#germanK
+{
+
+    position: relative;
+    float:inherit;
+    margin-left: -33px;
+    
+    visibility: hidden;
+}
+#spainol
+{
+
+    position: relative;
+    
+    margin-left: -37px;
+    visibility: visible;
+    
+    
+    
+}
+#selecteurLangue
+{
+
+    display: none;
+    margin-top: 40px;
+}
+#active1
+{
+
+    display: none;
+}
+#usa1
+{
+    display: block; 
+}
+
+
+
+
